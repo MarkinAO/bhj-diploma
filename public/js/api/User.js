@@ -3,13 +3,14 @@
  * регистрацией пользователя из приложения
  * Имеет свойство URL, равное '/user'.
  * */
-class User {
+class User { 
+  static URL = '/user'
   /**
    * Устанавливает текущего пользователя в
    * локальном хранилище.
    * */
   static setCurrent(user) {
-
+    localStorage.setItem('user', JSON.stringify(user))
   }
 
   /**
@@ -17,7 +18,7 @@ class User {
    * пользователе из локального хранилища.
    * */
   static unsetCurrent() {
-
+    localStorage.removeItem('user')
   }
 
   /**
@@ -25,7 +26,7 @@ class User {
    * из локального хранилища
    * */
   static current() {
-
+    return localStorage.user ? JSON.parse(localStorage.user) : undefined
   }
 
   /**
@@ -33,7 +34,19 @@ class User {
    * авторизованном пользователе.
    * */
   static fetch(callback) {
-
+    createRequest({      
+      callback: (err, response) => {
+        if (response && response.user) {
+          const {id, name} = response.user
+          this.setCurrent({id, name})
+        } else {
+            this.unsetCurrent()
+        }
+        callback(err, response)
+      },
+      method: 'GET',
+      url: this.URL + '/current'
+    })
   }
 
   /**
@@ -64,7 +77,20 @@ class User {
    * User.setCurrent.
    * */
   static register(data, callback) {
-
+    createRequest({
+      method: 'POST',
+      url: this.URL + '/register',
+      data: data,
+      callback: (err, response) => {
+        if(response && response.success) {
+          const {id, name} = response.user
+          this.setCurrent({id, name})
+        } else {
+          this.unsetCurrent()
+        }
+        callback(err, response)
+      }      
+    })
   }
 
   /**
@@ -72,6 +98,15 @@ class User {
    * выхода необходимо вызвать метод User.unsetCurrent
    * */
   static logout(callback) {
-
+    createRequest({      
+      callback: (err, response) => {
+        if(response && response.success) {
+          this.unsetCurrent()
+        }
+        callback(err, response)
+      },
+      method: 'POST',
+      url: this.URL + '/logout'
+    })
   }
 }

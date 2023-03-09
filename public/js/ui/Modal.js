@@ -12,7 +12,10 @@ class Modal {
    * необходимо выкинуть ошибку.
    * */
   constructor(element){
-
+    if(!element) {
+      throw new Error('Элемент не найден')
+    }
+    this.element = element
   }
 
   /**
@@ -20,28 +23,35 @@ class Modal {
    * должен закрыть текущее окно
    * (с помощью метода Modal.onClose)
    * */
-  registerEvents() {
-
+  registerEvents() {    
+    const dismissButtons = Array.from(this.element.querySelectorAll('[data-dismiss="modal"]'))
+    dismissButtons.forEach(button => {      
+      button.addEventListener('click', (e) => {
+        e.preventDefault()
+        this.onClose()
+      })
+    })
   }
 
   /**
    * Срабатывает после нажатия на элементы, закрывающие окно.
    * Закрывает текущее окно (Modal.close())
    * */
-  onClose(e) {
-
+  onClose(e) {    
+    this.close()
   }
   /**
    * Открывает окно: устанавливает CSS-свойство display
    * со значением «block»
    * */
   open() {
-
+    this.element.style.display = 'block'
+    this.registerEvents()
   }
   /**
    * Закрывает окно: удаляет CSS-свойство display
    * */
   close(){
-
+    this.element.style.display = 'none'
   }
 }
