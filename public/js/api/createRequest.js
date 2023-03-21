@@ -3,15 +3,20 @@
  * на сервер.
  * */
 const createRequest = (options = {}) => {
-    const xhr = new XMLHttpRequest
-    xhr.responseType = 'json'
+    const xhr = new XMLHttpRequest()
+    xhr.responseType = options.responseType || 'json'
 
     try {
         xhr.open(options?.method, options?.url)
-        if(options?.method === 'GET') {            
+        if(options?.method === 'GET') {
+            let dataURL = '?';
+            for(let key in options.data) {
+                dataURL += `${key}=${options.data[key]}&`;
+            }
+            options.url += dataURL.slice(0, -1);
             xhr.send()
         } else {
-            const formData = new FormData
+            const formData = new FormData()
             for (const key in options?.data) {
                 formData.append(key, options?.data[key])
             }
@@ -29,4 +34,4 @@ const createRequest = (options = {}) => {
     xhr.addEventListener('error', () => {
         options?.callback(xhr.error)
     })
-};
+}

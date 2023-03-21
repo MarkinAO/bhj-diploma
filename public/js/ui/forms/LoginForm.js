@@ -11,11 +11,14 @@ class LoginForm extends AsyncForm {
    * */
   onSubmit(data) {
     User.login(data, (err, respone) => {
-      if(respone.success) {
+      const erroreMessage = document.querySelector('.errore-message_login')
+      erroreMessage.textContent = ''
+      if(respone.success) {        
         App.setState( 'user-logged' )
-        App.getModal("register").close()
+        App.getModal("login").close()
       } else {
         console.error(respone.error)
+        erroreMessage.textContent = 'Введён неверный логин или пароль'
       }
     })
   }

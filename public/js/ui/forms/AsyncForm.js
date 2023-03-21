@@ -58,4 +58,4 @@ class AsyncForm {
   submit() {
     this.onSubmit(this.getData())
   }
-}
+} 

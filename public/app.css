@@ -80,3 +80,7 @@
 .transaction__controls {
   line-height: 70px;
 }
+
+.errore-message {
+  color: red;
+}

@@ -11,11 +11,14 @@ class RegisterForm extends AsyncForm {
    * */
   onSubmit(data) {
     User.register(data, (err, respone) => {
+      const erroreMessage = document.querySelector('.errore-message_register')
+      erroreMessage.textContent = ''
       if(respone.success) {
         App.setState( 'user-logged' )
-        App.getModal("register").close()
+        App.getModal("register").close()        
       } else {
         console.error(respone.error)
+        erroreMessage.textContent = 'Пользователь с таким email-адресом уже зарегистрирован'
       }
     })
   }

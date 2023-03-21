@@ -36,7 +36,7 @@ class User {
   static fetch(callback) {
     createRequest({      
       callback: (err, response) => {
-        if (response && response.user) {
+        if (response && response.success) {
           const {id, name} = response.user
           this.setCurrent({id, name})
         } else {
@@ -62,7 +62,7 @@ class User {
       responseType: 'json',
       data,
       callback: (err, response) => {
-        if (response && response.user) {
+        if (response && response.success) {
           this.setCurrent(response.user);
         }
         callback(err, response);
@@ -102,8 +102,7 @@ class User {
       callback: (err, response) => {
         if(response && response.success) {
           this.unsetCurrent()
-        }
-        callback(err, response)
+        }        
       },
       method: 'POST',
       url: this.URL + '/logout'
