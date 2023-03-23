@@ -26,7 +26,7 @@ class User {
    * из локального хранилища
    * */
   static current() {
-    return localStorage.user ? JSON.parse(localStorage.user) : undefined
+    return JSON.parse(localStorage.getItem('user'))
   }
 
   /**

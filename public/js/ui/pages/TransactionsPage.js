@@ -41,7 +41,7 @@ class TransactionsPage {
         this.removeAccount()
       }
       if(e.target.classList.contains('transaction__remove')) {
-        this.removeTransaction(e.target.dataSet.id)
+        this.removeTransaction(e.target.dataset.id)
       }
     })
   }
@@ -58,10 +58,11 @@ class TransactionsPage {
   removeAccount() {    
     if(this.lastOptions) {
       if(confirm('Вы действительно хотите удалить счёт?')) {
-        Account.remove(this.lastOptions, (err, response) => {
+        Account.remove({id: this.lastOptions.account_id}, (err, response) => {
           if(response.success) {
             App.updateWidgets()
             App.updateForms()
+            this.clear()
           } else {
             console.error(response.error)
           }
@@ -171,10 +172,10 @@ class TransactionsPage {
               ${item.sum} <span class="currency">₽</span>
           </div>
         </div>
-        <div class="col-md-2 transaction__controls">           
+        <div class="col-md-2 transaction__controls">            
             <button class="btn btn-danger transaction__remove" data-id="${item.id}">
                 <i class="fa fa-trash"></i>  
-            </button>
+            </button>            
         </div>
     </div>`
     
@@ -186,9 +187,9 @@ class TransactionsPage {
    * используя getTransactionHTML
    * */
   renderTransactions(data){
-    const content = document.querySelector('.content')    
-    data.forEach(el => {      
-      content.insertAdjacentHTML('beforeend', this.getTransactionHTML(el))
-    })
+    const content = document.querySelector('.content')
+    // Изменим сортировку транзакций на от новых к старым
+    data.sort((p, n) => (new Date(n.created_at)).getTime() - (new Date(p.created_at)).getTime())
+    content.innerHTML = data.reduce((acc, el) => acc + this.getTransactionHTML(el), '')
   }
 }
