@@ -22,7 +22,7 @@ class TransactionsWidget {
    * Регистрирует обработчики нажатия на
    * кнопки «Новый доход» и «Новый расход».
    * При нажатии вызывает Modal.open() для
-   * экземпляра окна
+   * экземпляра окна 
    * */
   registerEvents() {
     this.element.addEventListener('click', (e) => {

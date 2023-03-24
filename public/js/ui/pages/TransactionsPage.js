@@ -218,7 +218,7 @@ class TransactionsPage {
     content.innerHTML = data.reduce((acc, el) => acc + this.getTransactionHTML(el), '')
   }
 
-  // Редактирование транзакций
+  // Редактирование транзакций 
   editTransaction(data) {
     let formName
     let modalName
