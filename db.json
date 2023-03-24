@@ -1,4 +1,4 @@
-{
+{ 
   "users": [
     {
       "name": "demo",
@@ -734,31 +734,49 @@
       "created_at": "2023-03-23T21:15:33.990Z"
     },
     {
-      "id": "12of972clfmcohdc",
+      "id": "12of98s0lfmfnqkv",
       "type": "income",
-      "name": "{\"name\":\"Олег\",\"old_time\":null}",
-      "sum": 100,
-      "account_id": "12of94nolfmco8k2",
+      "name": "{\"name\":\"Олег\",\"old_time\":\"2023-03-24T09:39:17.652Z\"}",
+      "sum": 2000,
+      "account_id": "12of95xslfmcobmk",
       "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-24T09:38:54.575Z"
+      "created_at": "2023-03-24T11:02:18.702Z"
     },
     {
-      "id": "12of957olfmcoz6d",
+      "id": "12of965wlfmfpchp",
       "type": "income",
-      "name": "{\"name\":\"Олег\",\"old_time\":null}",
+      "name": "{\"name\":\"сбер\",\"old_time\":\"2023-03-24T11:03:28.215Z\"}",
+      "sum": 350,
+      "account_id": "12of95xslfmcobmk",
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-24T11:03:33.756Z"
+    },
+    {
+      "id": "12of9bg4lfmfpjju",
+      "type": "expense",
+      "name": "{\"name\":\"сбер\",\"old_time\":\"2023-03-24T09:39:30.531Z\"}",
       "sum": 200,
       "account_id": "12of95xslfmcobmk",
       "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-24T09:39:17.652Z"
+      "created_at": "2023-03-24T11:03:42.905Z"
     },
     {
-      "id": "12of91nslfmcpe9e",
-      "type": "expense",
-      "name": "{\"name\":\"сбер\",\"old_time\":\"2023-03-24T09:39:30.531Z\"}",
-      "sum": 50,
-      "account_id": "12of95xslfmcobmk",
+      "id": "12of9aawlfmfs09j",
+      "type": "income",
+      "name": "{\"name\":\"ВТБ\",\"old_time\":\"2023-03-24T11:05:31.362Z\"}",
+      "sum": 450,
+      "account_id": "12of94nolfmco8k2",
       "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-24T09:39:37.201Z"
+      "created_at": "2023-03-24T11:05:37.878Z"
+    },
+    {
+      "id": "12of94aslfmfs4ip",
+      "type": "income",
+      "name": "{\"name\":\"Олег\",\"old_time\":\"2023-03-24T09:38:54.575Z\"}",
+      "sum": 400,
+      "account_id": "12of94nolfmco8k2",
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-24T11:05:43.392Z"
     }
   ]
 }

@@ -110,7 +110,7 @@ class AccountsWidget {
    * Получает массив с информацией о счетах.
    * Отображает полученный с помощью метода
    * AccountsWidget.getAccountHTML HTML-код элемента
-   * и добавляет его внутрь элемента виджета
+   * и добавляет его внутрь элемента виджета 
    * */
   renderItem(data){
     data?.forEach(el => this.element.insertAdjacentHTML('beforeend', this.getAccountHTML(el)))

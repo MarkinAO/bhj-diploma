@@ -46,21 +46,11 @@ class CreateTransactionForm extends AsyncForm {
         App.update()
         this.element.reset()
 
-        if(data.old_time) {
-            // Для редактирования транзакций: удаляем старую транзакцию
-            App.pages.transactions.removeTransaction(data.transaction_id, true)
-                  
-            // Устанавливаем в формах значения по умолчанию
-            const modalName = formName === 'newIncome' ? 'newIncome' : 'newExpense'
-            App.getModal(modalName).element.querySelector('.btn-primary').textContent = 'Создать'
-            App.getModal(modalName).element.querySelector('.modal-title').textContent = formName === 'newIncome' ? 'Новый доход' : 'Новый расход'
-            const form = document.forms[data.type + 'Form']
-            // form.name.removeAttribute('readonly')
-            form.account_id.removeAttribute('disabled')
-            form.removeAttribute('data-old-time')
-            form.removeAttribute('data-id')
-            form.removeAttribute('data-time')
-        }      
+        if(data.old_time) {          
+          // Для редактирования транзакций: удаляем старую транзакцию
+          App.pages.transactions.removeTransaction(data.transaction_id, true)
+          App.pages.transactions.refreshForm(formName)
+        }
       } else {
         console.error(response.error)
       }      

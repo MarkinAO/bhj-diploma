@@ -29,6 +29,8 @@ class Modal {
       button.addEventListener('click', (e) => {
         e.preventDefault()
         this.onClose()
+        App.pages.transactions.refreshForm('newIncome')
+        App.pages.transactions.refreshForm('newExpense')
       })
     })
   }

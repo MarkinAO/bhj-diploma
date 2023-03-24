@@ -251,4 +251,19 @@ class TransactionsPage {
     
     form.setAttribute('data-transaction-id', data.dataset.id)    
   }
+
+  refreshForm(formName) {
+    // Устанавливаем в формах значения по умолчанию
+    const modalName = formName === 'newIncome' ? 'newIncome' : 'newExpense'
+    App.getModal(modalName).element.querySelector('.btn-primary').textContent = 'Создать'
+    App.getModal(modalName).element.querySelector('.modal-title').textContent = formName === 'newIncome' ? 'Новый доход' : 'Новый расход'
+
+    const formType = formName === 'newIncome' ? 'income' : 'expense'
+    const form = document.forms[formType + 'Form']
+    form.account_id.removeAttribute('disabled')
+    form.removeAttribute('data-old-time')
+    form.removeAttribute('data-id')
+    form.removeAttribute('data-time')
+    form.reset()
+  }
 }
