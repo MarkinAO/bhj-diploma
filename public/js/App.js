@@ -40,7 +40,7 @@ class App {
    * */
   static initPages() {
     this.pages = {
-      transactions: new TransactionsPage(this.content),
+      transactions: new TransactionsPage(this.content),      
     };
   }
 
@@ -85,7 +85,7 @@ class App {
       ),
       createExpense: new CreateTransactionForm(
         document.querySelector("#new-expense-form")
-      ),
+      ),      
     };
   }
 

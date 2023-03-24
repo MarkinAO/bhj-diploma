@@ -72,24 +72,19 @@
       "id": "3"
     },
     {
-      "name": "сбер",
-      "user_id": "12of9awolf1bv8j1",
-      "id": "12of9120lfi7i0qf"
+      "name": "налик",
+      "user_id": "12of991klfio6qrx",
+      "id": "12of9bywlfio7806"
     },
     {
-      "name": "кэш",
+      "name": "сбер",
       "user_id": "12of9awolf1bv8j1",
-      "id": "12of95ywlfi8s5wg"
+      "id": "12of94nolfmco8k2"
     },
     {
       "name": "ВТБ",
       "user_id": "12of9awolf1bv8j1",
-      "id": "12of9baslfijcx4v"
-    },
-    {
-      "name": "налик",
-      "user_id": "12of991klfio6qrx",
-      "id": "12of9bywlfio7806"
+      "id": "12of95xslfmcobmk"
     }
   ],
   "transactions": [
@@ -229,285 +224,6 @@
       "user_id": "1"
     },
     {
-      "id": "12of91kklfic8x8k",
-      "type": "income",
-      "name": "Калым",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:15:43.939Z"
-    },
-    {
-      "id": "12of9buklfic8xkr",
-      "type": "income",
-      "name": "Калым",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:15:44.378Z"
-    },
-    {
-      "id": "12of9buklfic8xl3",
-      "type": "income",
-      "name": "Калым",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:15:44.391Z"
-    },
-    {
-      "id": "12of9bgslfic8xzt",
-      "type": "income",
-      "name": "Калым",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:15:44.920Z"
-    },
-    {
-      "id": "12of97fclfic8yci",
-      "type": "income",
-      "name": "Калым",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:15:45.377Z"
-    },
-    {
-      "id": "12of97fclfic8ycv",
-      "type": "income",
-      "name": "Калым",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:15:45.391Z"
-    },
-    {
-      "id": "12of95w0lficavgn",
-      "type": "income",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:17:14.951Z"
-    },
-    {
-      "id": "12of94gwlficdb5b",
-      "type": "income",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:19:08.590Z"
-    },
-    {
-      "id": "12of91zglficigol",
-      "type": "income",
-      "name": "Пипег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:23:09.044Z"
-    },
-    {
-      "id": "12of96kglficjn2c",
-      "type": "expense",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:24:03.971Z"
-    },
-    {
-      "id": "12of9avglficksgk",
-      "type": "expense",
-      "name": "Пипег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:24:57.619Z"
-    },
-    {
-      "id": "12of97xwlfico5g9",
-      "type": "expense",
-      "name": "сбер",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:27:34.424Z"
-    },
-    {
-      "id": "12of97jslficsy23",
-      "type": "expense",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:31:18.122Z"
-    },
-    {
-      "id": "12of98gslficul48",
-      "type": "expense",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:32:34.663Z"
-    },
-    {
-      "id": "12of9b8clficwa8r",
-      "type": "expense",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:33:53.882Z"
-    },
-    {
-      "id": "12of925klficxuq5",
-      "type": "income",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:35:07.084Z"
-    },
-    {
-      "id": "12of98j4lfid5ote",
-      "type": "income",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:41:12.673Z"
-    },
-    {
-      "id": "12of98l8lfid6jr1",
-      "type": "expense",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:41:52.764Z"
-    },
-    {
-      "id": "12of9ai4lfidesez",
-      "type": "income",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:48:17.242Z"
-    },
-    {
-      "id": "12of979clfidjt06",
-      "type": "expense",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:52:11.285Z"
-    },
-    {
-      "id": "12of9464lfidmmdt",
-      "type": "income",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:54:22.672Z"
-    },
-    {
-      "id": "12of962klfidncik",
-      "type": "income",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:54:56.539Z"
-    },
-    {
-      "id": "12of9arwlfidniab",
-      "type": "expense",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:55:04.018Z"
-    },
-    {
-      "id": "12of9a6olfiibxxr",
-      "type": "income",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T17:06:02.510Z"
-    },
-    {
-      "id": "12of98bolfij8121",
-      "type": "income",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T17:30:59.544Z"
-    },
-    {
-      "id": "12of934klfijas62",
-      "type": "income",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T17:33:07.993Z"
-    },
-    {
-      "id": "12of944wlfijki1z",
-      "type": "income",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T17:40:41.446Z"
-    },
-    {
-      "id": "12of99twlfijkpgg",
-      "type": "expense",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T17:40:51.039Z"
-    },
-    {
-      "id": "12of9bwolfijypa6",
-      "type": "income",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T17:51:43.997Z"
-    },
-    {
-      "id": "12of94uslfijz0za",
-      "type": "income",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T17:51:59.157Z"
-    },
-    {
-      "id": "12of99dglfimy3z7",
-      "type": "income",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T19:15:15.234Z"
-    },
-    {
       "id": "12of934slfio7r6k",
       "type": "income",
       "name": "Зарплата",
@@ -526,22 +242,523 @@
       "created_at": "2023-03-21T19:50:57.519Z"
     },
     {
-      "id": "12of99wklfl0b5vp",
-      "type": "income",
-      "name": "Олег",
-      "sum": 800,
-      "account_id": "12of9120lfi7i0qf",
+      "id": "12of91b4lfl7b2tr",
+      "type": "edit",
+      "name": "",
+      "sum": 100,
       "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-23T11:04:51.589Z"
+      "created_at": "2023-03-23T14:20:44.942Z"
     },
     {
-      "id": "12of98h0lfl2g8qa",
+      "id": "12of9afklfl92fqx",
+      "type": "edit",
+      "name": "",
+      "sum": 200,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T15:10:01.016Z"
+    },
+    {
+      "id": "12of96oolfl98ppp",
+      "type": "edit",
+      "name": "",
+      "sum": 500,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T15:14:53.869Z"
+    },
+    {
+      "id": "12of9afklfl9bqhf",
+      "type": "edit",
+      "name": "",
+      "sum": 300,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T15:17:14.834Z"
+    },
+    {
+      "id": "12of991klfl9ewl0",
+      "type": "edit",
+      "name": "",
+      "sum": 200,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T15:19:42.707Z"
+    },
+    {
+      "id": "12of94q4lfl9f9r3",
+      "type": "edit",
+      "name": "",
+      "sum": 1000,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T15:19:59.774Z"
+    },
+    {
+      "id": "12of99xclflaczpd",
+      "type": "edit",
+      "name": "",
+      "sum": 200,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T15:46:13.056Z"
+    },
+    {
+      "id": "12of92u8lflagchs",
+      "type": "edit",
+      "name": "",
+      "sum": 200,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T15:48:49.599Z"
+    },
+    {
+      "id": "12of9ar8lflagnde",
+      "type": "edit",
+      "name": "",
+      "sum": 300,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T15:49:03.697Z"
+    },
+    {
+      "id": "12of98k4lflb31nw",
+      "type": "edit",
+      "name": "",
+      "sum": 200,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T16:06:28.651Z"
+    },
+    {
+      "id": "12of991klflb7dv9",
+      "type": "edit",
+      "name": "",
+      "sum": 1002,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T16:09:51.092Z"
+    },
+    {
+      "id": "12of94solflba38v",
+      "type": "edit",
+      "name": "",
+      "sum": 200,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T16:11:57.294Z"
+    },
+    {
+      "id": "12of9alslflbaq28",
+      "type": "edit",
+      "name": "",
+      "sum": 10,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T16:12:26.863Z"
+    },
+    {
+      "id": "12of91aclflbc879",
+      "type": "edit",
+      "name": "Олег",
+      "sum": 300,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T16:13:37.028Z"
+    },
+    {
+      "id": "12of91holflbcyfv",
+      "type": "edit",
+      "name": "Олег",
+      "sum": 1000,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T16:14:11.034Z"
+    },
+    {
+      "id": "12of98hglflbeauc",
+      "type": "edit",
+      "name": "Пипег",
+      "sum": 400,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T16:15:13.763Z"
+    },
+    {
+      "id": "12of97l4lflbjzcv",
+      "type": "edit",
+      "name": "Олег11",
+      "sum": 200,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T16:19:38.814Z"
+    },
+    {
+      "id": "12of9apslflblru2",
+      "type": "edit",
+      "name": "Олег11",
+      "sum": 500,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T16:21:02.377Z"
+    },
+    {
+      "id": "12of9bc8lflcjrk7",
+      "type": "income",
+      "name": "Олег11",
+      "sum": 1000,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T16:47:28.326Z"
+    },
+    {
+      "id": "12of9blslflco9jt",
+      "type": "income",
+      "name": "Олег",
+      "sum": 1000,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T16:50:58.264Z"
+    },
+    {
+      "id": "12of9490lflcu33u",
+      "type": "income",
+      "name": "Олег",
+      "sum": 100,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T16:55:29.849Z"
+    },
+    {
+      "id": "12of98dclflcx6fc",
+      "type": "income",
+      "name": "Олег",
+      "sum": 100,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T16:57:54.119Z"
+    },
+    {
+      "id": "12of95c0lfld1tv9",
+      "type": "income",
+      "name": "Олег",
+      "sum": 500,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:01:31.124Z"
+    },
+    {
+      "id": "12of9bpclfld2q78",
+      "type": "income",
+      "name": "Олег",
+      "sum": 500,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:02:13.027Z"
+    },
+    {
+      "id": "12of91h4lfld4ga6",
+      "type": "income",
+      "name": "Олег",
+      "sum": 500,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:03:33.485Z"
+    },
+    {
+      "id": "12of9314lfld5pf0",
+      "type": "income",
+      "name": "Олег",
+      "sum": 500,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:04:31.979Z"
+    },
+    {
+      "id": "12of98x4lfld8e1u",
+      "type": "income",
+      "name": "Олег",
+      "sum": 500,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:06:37.217Z"
+    },
+    {
+      "id": "12of99bslfld8slc",
+      "type": "income",
+      "name": "Олег",
+      "sum": 500,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:06:56.063Z"
+    },
+    {
+      "id": "12of9caslfld954k",
+      "type": "income",
+      "name": "Олег",
+      "sum": 300,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:07:12.307Z"
+    },
+    {
+      "id": "12of98s0lfld9g3m",
+      "type": "income",
+      "name": "Олег",
+      "sum": 300,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:07:26.529Z"
+    },
+    {
+      "id": "12of9baolfldb1l0",
+      "type": "income",
+      "name": "Олег",
+      "sum": 500,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:08:41.027Z"
+    },
+    {
+      "id": "12of97gslfldepxj",
+      "type": "income",
+      "name": "Олег",
+      "sum": 100,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:11:32.550Z"
+    },
+    {
+      "id": "12of98cglfldinaz",
+      "type": "income",
+      "name": "Олег",
+      "sum": 500,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:14:35.770Z"
+    },
+    {
+      "id": "12of94vclfldjqum",
+      "type": "income",
+      "name": "Олег",
+      "sum": 500,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:15:27.021Z"
+    },
+    {
+      "id": "12of98z8lfldkxmu",
+      "type": "income",
+      "name": "Олег",
+      "sum": 5000,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:16:22.469Z"
+    },
+    {
+      "id": "12of93bwlfldwd5z",
+      "type": "income",
+      "name": "Олег",
+      "sum": 300,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:25:15.814Z"
+    },
+    {
+      "id": "12of99m0lfldwnah",
+      "type": "income",
+      "name": "",
+      "sum": 100,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:25:28.936Z"
+    },
+    {
+      "id": "12of95x8lfldws2k",
+      "type": "income",
+      "name": "",
+      "sum": 100,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:25:35.131Z"
+    },
+    {
+      "id": "12of99gglfldwz0i",
+      "type": "income",
+      "name": "Олег",
+      "sum": 100,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:25:44.129Z"
+    },
+    {
+      "id": "12of971clfldxtq0",
+      "type": "income",
+      "name": "Олег",
+      "sum": 100,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:26:23.927Z"
+    },
+    {
+      "id": "12of99p4lfle8udr",
+      "type": "income",
+      "name": "Олег",
+      "sum": 30000,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:34:57.998Z"
+    },
+    {
+      "id": "12of97jolfleox59",
+      "type": "income",
+      "name": "Олег",
+      "sum": 100,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:47:28.076Z"
+    },
+    {
+      "id": "12of91v0lflepruu",
+      "type": "income",
+      "name": "",
+      "sum": 100,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:48:07.877Z"
+    },
+    {
+      "id": "12of94aclfler8c2",
+      "type": "income",
+      "name": "Олег",
+      "sum": 1002,
+      "account_id": "12of9b98lfle9y1y",
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:49:15.889Z"
+    },
+    {
+      "id": "12of99c0lflevhz1",
+      "type": "income",
+      "name": "Олег",
+      "sum": 100,
+      "account_id": "12of9a58lflers3h",
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:52:35.004Z"
+    },
+    {
+      "id": "12of98oclflewkhm",
+      "type": "income",
+      "name": "Олег",
+      "sum": 500,
+      "account_id": "12of9a58lflers3h",
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:53:24.921Z"
+    },
+    {
+      "id": "12of9ap4lflex8db",
+      "type": "income",
+      "name": "Олег",
+      "sum": 1000,
+      "account_id": "12of945clflepy5p",
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:53:55.870Z"
+    },
+    {
+      "id": "12of91uklflexhf6",
+      "type": "income",
+      "name": "Олег",
+      "sum": 1000,
+      "account_id": "12of9b98lfle9y1y",
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:54:07.601Z"
+    },
+    {
+      "id": "12of97gslfleyodl",
+      "type": "income",
+      "name": "Олег",
+      "sum": 300,
+      "account_id": "12of9akglflctwgd",
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T17:55:03.272Z"
+    },
+    {
+      "id": "12of95fclflf8zyx",
+      "type": "income",
+      "name": "Олег",
+      "sum": 100,
+      "account_id": "22of9600lflbks3f",
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T18:03:04.856Z"
+    },
+    {
+      "id": "12of999slflf9dlw",
+      "type": "income",
+      "name": "Олег",
+      "sum": 100,
+      "account_id": "22of916glfley6al",
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T18:03:22.531Z"
+    },
+    {
+      "id": "12of92oslflfckm1",
       "type": "income",
       "name": "Пипег",
       "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
+      "account_id": "22of9a8clflfc2dx",
       "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-23T12:04:47.793Z"
+      "created_at": "2023-03-23T18:05:51.576Z"
+    },
+    {
+      "id": "12of94fclflfeh95",
+      "type": "income",
+      "name": "Олег",
+      "sum": 100,
+      "account_id": "22of9bj4lflfe6b6",
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T18:07:20.536Z"
+    },
+    {
+      "id": "12of9a84lflfjn7p",
+      "type": "income",
+      "name": "Олег",
+      "sum": 100,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T18:11:21.540Z"
+    },
+    {
+      "id": "12of9864lflflu9p",
+      "type": "income",
+      "name": "Олег",
+      "sum": 500,
+      "account_id": "12of9cl0lflfgwct",
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T18:13:03.996Z"
+    },
+    {
+      "id": "12of93z0lflfs2n2",
+      "type": "income",
+      "name": "Олег",
+      "sum": 100,
+      "account_id": "12of9cislflfppnn",
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T18:17:54.781Z"
+    },
+    {
+      "id": "12of91v0lflh63xp",
+      "type": "income",
+      "name": "Олег",
+      "sum": 300,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T18:56:49.260Z"
+    },
+    {
+      "id": "12of9boklflh6net",
+      "type": "income",
+      "name": "Олег",
+      "sum": 300,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T18:57:14.500Z"
+    },
+    {
+      "id": "12of973wlflh7jt1",
+      "type": "income",
+      "name": "Олег",
+      "sum": 500,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T18:57:56.484Z"
+    },
+    {
+      "id": "12of999olflm4jc7",
+      "type": "income",
+      "name": "Олег",
+      "sum": 300,
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-23T21:15:33.990Z"
+    },
+    {
+      "id": "12of972clfmcohdc",
+      "type": "income",
+      "name": "{\"name\":\"Олег\",\"old_time\":null}",
+      "sum": 100,
+      "account_id": "12of94nolfmco8k2",
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-24T09:38:54.575Z"
+    },
+    {
+      "id": "12of957olfmcoz6d",
+      "type": "income",
+      "name": "{\"name\":\"Олег\",\"old_time\":null}",
+      "sum": 200,
+      "account_id": "12of95xslfmcobmk",
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-24T09:39:17.652Z"
+    },
+    {
+      "id": "12of91nslfmcpe9e",
+      "type": "expense",
+      "name": "{\"name\":\"сбер\",\"old_time\":\"2023-03-24T09:39:30.531Z\"}",
+      "sum": 50,
+      "account_id": "12of95xslfmcobmk",
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-24T09:39:37.201Z"
     }
   ]
 }

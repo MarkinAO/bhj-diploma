@@ -39,7 +39,13 @@ class AsyncForm {
    * }
    * */
   getData() {
-    const formData = new FormData(this.element)    
+    const formData = new FormData(this.element)
+    
+    if(this.element.hasAttribute('data-id')) {
+      formData.append('account_id', this.element.getAttribute('data-id'))      
+      formData.append('old_time', this.element.getAttribute('data-time'))
+      formData.append('transaction_id', this.element.getAttribute('data-transaction-id'))
+    }
     return Object.fromEntries(formData.entries())
   }
 

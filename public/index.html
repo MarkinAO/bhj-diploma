@@ -198,7 +198,7 @@
                     <h4 class="modal-title">Новый доход</h4>
                 </div>
                 <div class="modal-body">
-                    <form class="form" id="new-income-form">
+                    <form class="form" id="new-income-form" name="incomeForm">
                         <input name="type" type="hidden" value="income">
 
                         <div class="form-group">
@@ -231,7 +231,7 @@
                     <h4 class="modal-title">Новый расход</h4>
                 </div>
                 <div class="modal-body">
-                    <form class="form" id="new-expense-form">
+                    <form class="form" id="new-expense-form" name="expenseForm">
                         <input name="type" type="hidden" value="expense">
 
                         <div class="form-group">
@@ -254,7 +254,40 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
+
+    <!-- <div class="modal fade in" id="modal-new-edit" data-modal-id="newEdit">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                        <span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Редактировать сумму</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form" id="new-edit-form" name="editForm">
+                        <input name="type" type="hidden" value="edit">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Название" name="name" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Сумма" name="sum" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-accounts-list"></label>
+                            <select name="account_id" id="edit-accounts-list" class="form-control accounts-select" disabled="true"></select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Закрыть</button>
+                    <button type="submit" class="btn btn-primary" form="new-edit-form">Редактировать</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
 
 
     <script src="js/api/createRequest.js"></script>

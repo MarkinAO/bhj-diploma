@@ -43,6 +43,11 @@ class TransactionsPage {
       if(e.target.classList.contains('transaction__remove')) {
         this.removeTransaction(e.target.dataset.id)
       }
+
+      // Редактирование транзакций
+      if(e.target.classList.contains('transaction__edit')) {
+        this.editTransaction(e.target)
+      }
     })
   }
 
@@ -77,16 +82,23 @@ class TransactionsPage {
    * По удалению транзакции вызовите метод App.update(),
    * либо обновляйте текущую страницу (метод update) и виджет со счетами
    * */
-  removeTransaction( id ) {
-    if(confirm('Вы действительно хотите удалить эту транзакцию?')) {
-      Transaction.remove({id}, (err, response) => {
-        if(response.success) {
-          App.update()
-        } else {
-          console.error(response.error)
-        }
-      })
-    }    
+  removeTransaction( id, flag ) {
+    // Модифицировал метод для возможности использования при редактировании без запроса подтверждения у пользователя    
+    const func = (id) => Transaction.remove({id}, (err, response) => {      
+      if(response.success) {
+        App.update()
+      } else {
+        console.error(response.error)
+      }
+    })
+    
+    if(flag) {
+      func(id)
+    } else {      
+      if(confirm('Вы действительно хотите удалить эту транзакцию?')) {
+        func(id)
+      } 
+    }
   }
 
   /**
@@ -154,7 +166,11 @@ class TransactionsPage {
    * item - объект с информацией о транзакции
    * */
   getTransactionHTML(item) {
-    const transactionType = item.type === 'income' ? 'transaction_income' : 'transaction_expense'    
+    const transactionType = item.type === 'income' ? 'transaction_income' : 'transaction_expense'
+
+    item.name = JSON.parse(item.name)
+    const date = item.name.old_time ? this.formatDate(item.name.old_time) : this.formatDate(item.created_at)
+    const oldTime = item.name.old_time || item.created_at    
 
     const newTransaction = 
     `<div class="transaction ${transactionType} row">
@@ -163,8 +179,8 @@ class TransactionsPage {
               <span class="fa fa-money fa-2x"></span>
           </div>
           <div class="transaction__info">
-              <h4 class="transaction__title">${item.name}</h4>              
-              <div class="transaction__date">${this.formatDate(item.created_at)}</div>
+              <h4 class="transaction__title">${item.name.name}</h4>              
+              <div class="transaction__date" data-old-time="${oldTime}">${date}</div>
           </div>
         </div>
         <div class="col-md-3">
@@ -172,7 +188,10 @@ class TransactionsPage {
               ${item.sum} <span class="currency">₽</span>
           </div>
         </div>
-        <div class="col-md-2 transaction__controls">            
+        <div class="col-md-2 transaction__controls">
+            <button class="btn btn-success transaction__edit" data-id="${item.id}">
+                <i class="glyphicon glyphicon-edit"></i>  
+            </button>
             <button class="btn btn-danger transaction__remove" data-id="${item.id}">
                 <i class="fa fa-trash"></i>  
             </button>            
@@ -188,8 +207,48 @@ class TransactionsPage {
    * */
   renderTransactions(data){
     const content = document.querySelector('.content')
-    // Изменим сортировку транзакций на от новых к старым
-    data.sort((p, n) => (new Date(n.created_at)).getTime() - (new Date(p.created_at)).getTime())
+    // Изменим сортировку транзакций на от новых к старым    
+    data.sort((p, n) => {
+      let next = JSON.parse(n.name).old_time ? new Date(JSON.parse(n.name).old_time).getTime() : new Date(n.created_at).getTime()
+      let prev = JSON.parse(p.name).old_time ? new Date(JSON.parse(p.name).old_time).getTime() : new Date(p.created_at).getTime()
+
+      return (next - prev) < 0 ? -1 : 1
+    })    
+
     content.innerHTML = data.reduce((acc, el) => acc + this.getTransactionHTML(el), '')
+  }
+
+  // Редактирование транзакций
+  editTransaction(data) {
+    let formName
+    let modalName
+    if(data.closest('.transaction').classList.contains('transaction_income')) {
+      formName = 'incomeForm'
+      modalName = 'newIncome'
+    } else {      
+      formName = 'expenseForm'
+      modalName = 'newExpense'
+    }
+    App.getModal(modalName).open()
+    App.getModal(modalName).element.querySelector('.modal-title').textContent = 'Редактировать'
+    App.getModal(modalName).element.querySelector('.btn-primary').textContent = 'Редактировать'
+
+    // Устанавливаем в модальном окне название транзакции
+    const form = document.forms[formName]
+    form.name.value = data.closest('.transaction').querySelector('.transaction__title').textContent
+
+    // Устанавливаем в модальном окне нужный счёт
+    const title = document.querySelector('.content-title').textContent
+    const accountActive = Array.from(form.account_id.options).find(el => el.textContent === title)
+    accountActive.setAttribute('selected', 'selected')
+    form.account_id.setAttribute('disabled', true)
+    form.setAttribute('data-id', accountActive.value)
+
+    form.setAttribute('data-time', data.closest('.transaction').querySelector('.transaction__date').getAttribute('data-old-time')) 
+
+    // Устанавливаем в модальном окне старую сумму
+    form.sum.value = data.closest('.transaction').querySelector('.transaction__summ').textContent.trim().slice(0, -2)    
+    
+    form.setAttribute('data-transaction-id', data.dataset.id)    
   }
 }

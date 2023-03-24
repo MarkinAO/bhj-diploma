@@ -32,7 +32,7 @@ class TransactionsWidget {
       }
       if(e.target.closest('.create-expense-button')) {
         App.getModal('newExpense').open()
-      }
+      }      
     })
   }
 }
