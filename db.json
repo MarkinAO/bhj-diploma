@@ -427,15 +427,6 @@
       "created_at": "2023-03-21T14:54:56.539Z"
     },
     {
-      "id": "12of9arwlfidniab",
-      "type": "expense",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T14:55:04.018Z"
-    },
-    {
       "id": "12of9a6olfiibxxr",
       "type": "income",
       "name": "Олег",
@@ -470,15 +461,6 @@
       "account_id": "12of9120lfi7i0qf",
       "user_id": "12of9awolf1bv8j1",
       "created_at": "2023-03-21T17:40:41.446Z"
-    },
-    {
-      "id": "12of99twlfijkpgg",
-      "type": "expense",
-      "name": "Олег",
-      "sum": 100,
-      "account_id": "12of9120lfi7i0qf",
-      "user_id": "12of9awolf1bv8j1",
-      "created_at": "2023-03-21T17:40:51.039Z"
     },
     {
       "id": "12of9bwolfijypa6",
@@ -542,6 +524,15 @@
       "account_id": "12of9120lfi7i0qf",
       "user_id": "12of9awolf1bv8j1",
       "created_at": "2023-03-23T12:04:47.793Z"
+    },
+    {
+      "id": "12of96xglfnp5kgm",
+      "type": "income",
+      "name": "Олег",
+      "sum": 300,
+      "account_id": "12of9120lfi7i0qf",
+      "user_id": "12of9awolf1bv8j1",
+      "created_at": "2023-03-25T08:15:53.301Z"
     }
   ]
 }
